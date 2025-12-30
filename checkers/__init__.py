@@ -1,0 +1,1 @@
+# python path: checkers/__init__.py
