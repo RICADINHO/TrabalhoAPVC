@@ -1,5 +1,4 @@
 import pygame
-from checkers.King import King
 
 class Piece:
 	def __init__(self, x, y, color, board):
@@ -25,6 +24,7 @@ class Piece:
 			# Pawn promotion
 			if self.notation == 'p':
 				if self.y == 0 or self.y == 7:
+					from checkers.King import King
 					tile.occupying_piece = King(
 						self.x, self.y, self.color, self.board
 					)
@@ -46,7 +46,7 @@ class Piece:
 					# Pawn promotion
 					if self.notation == 'p':
 						if self.y == 0 or self.y == 7:
-							from King import King
+							from checkers.King import King
 							tile.occupying_piece = King(
 								self.x, self.y, self.color, self.board
 							)
