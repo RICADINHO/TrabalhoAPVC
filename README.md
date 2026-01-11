@@ -10,4 +10,5 @@
 
 - Treinar as peças no YOLO
 - Homography
-- Transformada de deuff
+- Hugh Line Transform
+- pygame
